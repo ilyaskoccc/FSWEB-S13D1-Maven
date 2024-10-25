@@ -15,9 +15,13 @@ public class Main {
     // System.out.println(hasTeen(22, 23, 34));
 
         /* 3. Soru Bölümü */
-    System.out.println(isCatPlaying(true, 10));
-    System.out.println(isCatPlaying(false, 36));
-    System.out.println(isCatPlaying(false, 35));
+    // System.out.println(isCatPlaying(true, 10));
+    // System.out.println(isCatPlaying(false, 36));
+    // System.out.println(isCatPlaying(false, 35));
+
+        /* 4. Soru Bölümü */
+    System.out.println(area(5.0, 4.0));
+    System.out.println(area(-1.0, 4.0));
 
 
     }
@@ -46,28 +50,32 @@ public class Main {
     //     }
     // }
 
-    public static boolean isCatPlaying(boolean isSummer, int temp) {
-        if (isSummer) {
-            if (temp >= 25 && temp <= 45) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            if (temp >= 25 && temp <= 35) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+    // public static boolean isCatPlaying(boolean isSummer, int temp) {
+    //     if (isSummer) {
+    //         if (temp >= 25 && temp <= 45) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     } else {
+    //         if (temp >= 25 && temp <= 35) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
 
-        // int sicaklikUstLimit = isSummer ? 45 : 35;
-        // return temp >= 25 && temp <= sicaklikUstLimit;
-    }
-
-    // public static double area(double width, double height) {
-    //     System.out.println("Hello world!");
+    //     // int sicaklikUstLimit = isSummer ? 45 : 35;
+    //     // return temp >= 25 && temp <= sicaklikUstLimit;
     // }
+
+    public static double area(double width, double height) {
+        if (width >= 0 && height >= 0) {
+            return width * height;
+        } else {
+            return -1;
+        }
+    }
 
     // public static double area(double radius) {
     //     System.out.println("Hello world!");
