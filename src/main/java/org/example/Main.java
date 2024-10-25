@@ -10,9 +10,14 @@ public class Main {
     // System.out.println(shouldWakeUp (true, -1));
 
         /* 2. Soru Bölümü */
-    System.out.println(hasTeen(9, 99, 19));
-    System.out.println(hasTeen(23, 15, 42));
-    System.out.println(hasTeen(22, 23, 34));
+    // System.out.println(hasTeen(9, 99, 19));
+    // System.out.println(hasTeen(23, 15, 42));
+    // System.out.println(hasTeen(22, 23, 34));
+
+        /* 3. Soru Bölümü */
+    System.out.println(isCatPlaying(true, 10));
+    System.out.println(isCatPlaying(false, 36));
+    System.out.println(isCatPlaying(false, 35));
 
 
     }
@@ -33,17 +38,32 @@ public class Main {
     //     }
     // }
 
-    public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
-        if ((firstAge >= 13 && firstAge <= 19) || (secondAge >= 13 && secondAge <= 19) || (thirdAge >= 13 && thirdAge <= 19) ) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // public static boolean isCatPlaying(boolean isSummer, int temp) {
-    //     System.out.println("Hello world!");
+    // public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
+    //     if ((firstAge >= 13 && firstAge <= 19) || (secondAge >= 13 && secondAge <= 19) || (thirdAge >= 13 && thirdAge <= 19) ) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
     // }
+
+    public static boolean isCatPlaying(boolean isSummer, int temp) {
+        if (isSummer) {
+            if (temp >= 25 && temp <= 45) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            if (temp >= 25 && temp <= 35) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // int sicaklikUstLimit = isSummer ? 45 : 35;
+        // return temp >= 25 && temp <= sicaklikUstLimit;
+    }
 
     // public static double area(double width, double height) {
     //     System.out.println("Hello world!");
