@@ -20,8 +20,12 @@ public class Main {
     // System.out.println(isCatPlaying(false, 35));
 
         /* 4. Soru Bölümü */
-    System.out.println(area(5.0, 4.0));
-    System.out.println(area(-1.0, 4.0));
+    // System.out.println(area(5.0, 4.0));
+    // System.out.println(area(-1.0, 4.0));
+
+        /* 5. Soru Bölümü */
+    System.out.println(area(5.0));
+    System.out.println(area(-1));
 
 
     }
@@ -69,15 +73,19 @@ public class Main {
     //     // return temp >= 25 && temp <= sicaklikUstLimit;
     // }
 
-    public static double area(double width, double height) {
-        if (width >= 0 && height >= 0) {
-            return width * height;
+    // public static double area(double width, double height) {
+    //     if (width >= 0 && height >= 0) {
+    //         return width * height;
+    //     } else {
+    //         return -1;
+    //     }
+    // }
+
+    public static double area(double radius) {
+        if (radius >= 0) {
+            return radius * radius * Math.PI;
         } else {
             return -1;
         }
     }
-
-    // public static double area(double radius) {
-    //     System.out.println("Hello world!");
-    // }
 }
